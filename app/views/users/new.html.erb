@@ -1,12 +1,20 @@
-<%= form_with model: @user, local: true do |f| %>
-  <%= f.label :email, 'メールアドレス' %>
-  <%= f.text_field :email  %>
-
-  <%= f.label :password, 'パスワード' %>
-  <%= f.password_field :password  %>  
-
-  <%= f.label :password_confirmation, 'パスワード確認' %>
-  <%= f.password_field :password_confirmation  %>     
-
-  <%= f.submit '登録' %>  
-<% end %>
+<div class="container">
+  <div class="form-btn">
+    <%= form_with model: @user, local: true do |f| %>
+    
+    <div class="form">
+      <%= f.label :email, 'メールアドレス' %><br>
+      <%= f.text_field :email  %>
+    </div>
+    <div class="form">
+      <%= f.label :password, 'パスワード' %><br>
+      <%= f.password_field :password  %>  
+    </div>
+    <div class="form">
+      <%= f.label :password_confirmation, 'パスワード確認' %><br>
+      <%= f.password_field :password_confirmation  %>     
+    </div>
+      <%= f.submit '登録' ,class:"btn btn--orange"%>  
+    <% end %>
+  </div>
+</div>

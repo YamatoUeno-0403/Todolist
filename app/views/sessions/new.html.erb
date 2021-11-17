@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="form-btn">
+
+<%= form_with url: sessions_path, local: true do |f| %>
+     <div class="form">
+      <%= f.label :email, 'メールアドレス' %><br>
+      <%= f.text_field :email  %>
+    </div>
+    <div class="form">
+      <%= f.label :password, 'パスワード' %><br>
+      <%= f.password_field :password  %>  
+    </div> 
+
+  <%= f.submit 'ログイン' ,class:"btn btn--orange"%>         
+<% end %>
+
+  </div>
+</div>

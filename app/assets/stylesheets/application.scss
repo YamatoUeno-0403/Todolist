@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
+
+.cover-container {
+    max-width: 42em;
+}
+.form-btn{
+    padding-top:100px;
+    text-align:center;
+}
+.form{
+    padding:10px;
+}
+.btn--orange,
+a.btn--orange {
+  margin-top:10px;
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  width: 15%;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}

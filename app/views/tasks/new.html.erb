@@ -1,0 +1,19 @@
+<div class="container_list">
+<div class="position-relative">
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="btn btn-gradient" id="addlist"><span>Add a list</span></div>
+        <div class="form-btn" id="submit_list">
+        
+            <%= form_with url: tasks_path, local: false do |f| %>
+                 <div class="form">
+                  <%= f.label :content, 'To do list' %><br>
+                  <%= f.text_field :content  %>
+                </div>
+              <%= f.submit 'Add list'%>
+              <input type="button" value="閉じる" id="addlist_close">
+            <% end %>
+
+        </div>
+    </div>
+</div>
+</div>

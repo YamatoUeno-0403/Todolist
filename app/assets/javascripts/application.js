@@ -17,7 +17,6 @@
 $(function () {
   $('#addlist').click(function () {
     $('#submit_list').fadeIn();
-    $('#addlist').fadeOut();
   });
   $('#addlist_close').click(function () {
     $('#submit_list').fadeOut();

@@ -65,3 +65,4 @@ gem 'sorcery'
 
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'pry-byebug', group: :development

@@ -3,10 +3,15 @@
         <div class="btn btn-gradient" id="addlist"><span>Add a list</span></div>
         <div class="form-btn" id="submit_list">
         
-            <%= form_with url: tasks_path, local: false do |f| %>
+            <%= form_with model: @task, local:true do |f| %>
+                             
+                <div class="form">
+                  <%= f.label :title, 'タイトル' %><br>
+                  <%= f.text_field :title  %>
+                </div>
                  <div class="form">
-                  <%= f.label :content, 'To do list' %><br>
-                  <%= f.text_field :content  %>
+                  <%= f.label :contnt, '内容' %><br>
+                  <%= f.text_area :contnt  %>
                 </div>
               <%= f.submit 'Add list'%>
               <input type="button" value="閉じる" id="addlist_close">
